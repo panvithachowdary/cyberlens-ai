@@ -1,16 +1,143 @@
-# React + Vite
+# 🛡️ CyberLens AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CyberLens AI is an AI-powered scam and phishing detection platform that helps users identify suspicious messages, emails, links, and screenshots before they become victims of online fraud.
 
-Currently, two official plugins are available:
+Built for the Creative Showcase Hackathon, CyberLens AI combines OCR, Large Language Models, and threat analysis to provide easy-to-understand cybersecurity insights.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+### 🔍 AI Threat Detection
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Analyze suspicious messages using AI and receive a detailed threat report.
 
-## Expanding the ESLint configuration
+### 📸 Screenshot Analysis
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Upload screenshots of emails, SMS messages, or WhatsApp chats and extract text using OCR.
+
+### ⚠️ Threat Scoring
+
+Generate a threat score from 0–100 based on the likelihood of phishing or fraud.
+
+### 🧠 AI-Powered Explanations
+
+Get a detailed explanation of why a message may be dangerous.
+
+### 📄 PDF Report Generation
+
+Download a professional threat analysis report for future reference.
+
+### 📊 Threat Statistics Dashboard
+
+Track scan history and monitor detected threat levels.
+
+### 🕒 Scan History
+
+Review previously scanned threats and their risk classifications.
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React
+* Vite
+* CSS
+
+### AI & Security
+
+* Groq API (Llama 3.1)
+* Prompt Engineering
+
+### OCR
+
+* Tesseract.js
+
+### Utilities
+
+* Axios
+* jsPDF
+
+---
+
+## 📂 Project Structure
+
+src/
+├── App.jsx
+├── App.css
+├── services/
+│ ├── gemini.js
+│ └── ocr.js
+├── data/
+│ └── scanner.js
+└── main.jsx
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/panvithachowdary/cyberlens-ai.git
+cd cyberlens-ai/client
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create a `.env` file:
+
+```env
+VITE_GROQ_API_KEY=your_api_key_here
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+---
+
+## 🎯 Demo Scenarios
+
+* Fake Bank KYC Scam
+* Fake Work-From-Home Job Scam
+* OTP Fraud Messages
+* Screenshot-Based Scam Detection
+
+---
+
+## 🌟 Future Improvements
+
+* Real-time URL Reputation Scanner
+* Email Header Analysis
+* Malware Link Detection
+* Browser Extension Integration
+* Cyber Threat Intelligence Feed
+* Multi-language Scam Detection
+
+---
+
+## 👩‍💻 Author
+
+**Panvitha Chowdary**
+
+* GitHub: https://github.com/panvithachowdary
+* LinkedIn: https://www.linkedin.com/in/panvitha-chowdary/
+
+---
+
+## 📜 License
+
+This project was developed for educational and hackathon purposes.
